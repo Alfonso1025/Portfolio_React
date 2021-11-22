@@ -1,0 +1,48 @@
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header{
+  background:  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,1)), url("./autumn.jpg");
+  background-size: cover;
+  background-position:center;
+  border-bottom: .5px solid #e0e4e8;
+  margin-bottom: 20px;
+  height: 700px;
+  width: 80vw;
+  
+  
+  padding: 30px;
+  
+}
+
+.header-content{
+  padding-top: 100px;
+  display: block;
+  font-size: 30px;
+  color: rgb(165, 145, 145);
+  text-align: center;
+}
+
+@media (max-width: 700px){
+  .wrapper{
+  display: grid;
+  grid-template-columns:  80vw;
+  width: 100vw;
+  height: 100vh;
+  }
+  .header{
+    width: 100vw;
+  }
+}
+

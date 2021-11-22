@@ -1,0 +1,83 @@
+.sidebar{
+    height: 100vh;
+    width: 20vw;
+    background: #222629;
+    position: fixed;
+}
+
+.sidebar .container-profile-pic{
+    display: flex;
+    flex-direction: row;
+    padding:5px;
+    margin-bottom: 30px;
+
+}
+
+.sidebar .profile-text-col h2{
+    color: rgb(165, 145, 145);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.sidebar img{
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    border-radius: 50%;
+}  
+
+.sidebar ul li{
+    padding: 18px;
+    border-bottom:1px solid rgba(0,0,0,0.05);
+    border-top:1px solid rgba(225,225,225,0.05);
+    height: 70px;
+
+}
+
+ .sidebar ul li a{
+    color:rgb(165, 145, 145);
+    display: block;
+}
+
+ .sidebar ul li a{
+    width: 25px;
+    margin-right: 60px;
+
+}
+
+.sidebar ul li:hover{
+    background: #6e686c13;
+}
+
+ .sidebar ul li:hover a{
+    color:  rgb(184, 170, 170);
+}
+
+.sidebar .social_media{
+        
+    display:flex;
+    margin-top: 117px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+
+}
+.sidebar .social_media a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    color: #bdb8d7;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+
+
+
+}
+
+.active{
+    display: block;
+}
+

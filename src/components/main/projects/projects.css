@@ -1,0 +1,302 @@
+.projects{
+        
+    height: 2700px;
+    background-color: #f5fafa;
+
+}
+
+
+
+.card-project{
+    box-shadow: 0 0 20px rgba(0, 0,0,0.2);
+    width: 80%;
+    max-width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background: white;
+}
+
+.project-image{
+
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    
+    
+}
+ .project-stack{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 20px 5px;
+    margin-top: 30px;
+}
+
+.project-stack li{
+    background: #094d4b;
+    border-radius: 5%;
+    padding: 7px;
+    text-align: center;
+    color: rgb(241, 238, 238);
+    font-size: 15px;
+}
+.project-main{
+    text-align: left;
+    margin-left: 4em;
+    
+    
+}
+.project-name{
+    margin-bottom: 8px;
+}
+
+
+ .card-project .project-body{
+    margin-top: 2.5em;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 20px;
+    
+}
+
+
+.project-button{
+    text-align: center;
+
+ }
+ .view-details-button{
+     appearance: none;
+     border: none;
+     outline: none;
+     text-decoration: none;
+     padding: 0.75em 2em 0.75em 2em;;
+     border-radius: 0.35em;
+     background: #8ebebc;
+     color: #fff;
+     font-size: 30px;
+     margin-top: 20px;
+     
+ 
+ }
+
+
+
+
+  .inspirations  .container{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 300px 300px;
+    justify-content: space-evenly;
+    grid-row-gap: 100px;
+
+    margin-bottom: 10px;
+    margin-bottom: 50px;
+    height: 800px;
+
+}
+
+.card{
+    background: white;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0,0,0.5);
+    
+    
+    
+}
+.card-image{
+
+    height: 130px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-1{
+   
+    background-image: url("./samharris.png");
+    
+
+}
+.card-2{
+    background-image: url("./lex.png");
+
+}
+.card-3{
+    background-image: url("./Vitalyc.png");
+    
+}
+.card-4{
+   
+    background-image: url("./elon.png");
+}
+
+
+.card-elements{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.card-elements h2{
+    margin-bottom: 5px;
+}
+
+
+
+ .inspirations .container .card-elements .inspirations-p{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 15px;
+
+}
+.card-elements .card-icon{
+    color:rgb(166, 166, 240);
+    align-self: center;
+}
+
+.inspirations-button{
+    border-radius: 8px;
+    border:.5px solid white;
+    color: rgb(166, 166, 240);
+    font-size: 15px;
+
+
+}
+
+
+
+
+
+
+.interest-container{
+        
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5fafa;
+    height: 600px;
+
+}
+
+table{
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px lightgrey;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+thead{
+    box-shadow: 0 5px 10px lightgrey;
+
+}
+
+th{
+    padding: 2rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+td{
+    padding: 2rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 550;
+
+}
+tr{
+    height: 6rem;
+}
+tr:nth-child(even){
+    background-color: #edf0f7;
+}
+
+
+
+
+
+@media (max-width: 700px){
+
+    .projects{
+        height: 3200px;
+    }
+
+    .card-project{
+        box-shadow: 0 0 20px rgba(0, 0,0,0.2);
+        width: 90%;
+        max-width: 700px;
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        background: white;
+    }
+
+    .project-main{
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .project-stack li{
+        
+        padding: 5px;
+        
+        
+        font-size: 15px;
+    }
+
+    .view-details-button{
+        appearance: none;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        padding: 0.50em 1em 0.50em 1em;;
+        border-radius: 0.35em;
+        background: #8ebebc;
+        color: #fff;
+        font-size: 5vw;
+        margin-top: 0px;
+    }
+
+
+
+     .inspirations .container{
+        display: grid;
+        grid-template-columns: 200px;
+        grid-template-rows: 300px 300px 300px 300px;
+        justify-content: space-evenly;
+        grid-row-gap: 100px;
+    
+        margin-bottom: 10px;
+        margin-bottom: 50px;
+        height: 1800px;
+    
+    }
+
+    .card{
+        background: white;
+        width: 60vw;
+        height: 350px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0,0,0.5);
+    
+    }
+   
+  
+
+    
+    
+
+}
