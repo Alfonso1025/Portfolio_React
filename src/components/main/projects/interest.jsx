@@ -1,4 +1,5 @@
 import React from 'react'
+
 import useFetch from '../../app/useFetch';
 import useWindowWidth from '../../app/useWindowWidth';
 
@@ -15,7 +16,7 @@ const fetchParams =url+qString
 
 const Interests= ()=>{
 
-const isSmallScreen= useWindowWidth();
+const screenSize= useWindowWidth();
 
 const fetchedData= useFetch(fetchParams, {isLoading:true, data:null})
     if(!fetchedData.data || fetchedData.isLoading){
@@ -25,15 +26,20 @@ const fetchedData= useFetch(fetchParams, {isLoading:true, data:null})
 const arrayData= fetchedData.data.data;
 
 
-if(!isSmallScreen){ 
+if(screenSize>700){ 
     return(
+        <React.Fragment>
+        <div className="crypto-header">
+            <h1 className="header-projects">Crypto-Dashboard</h1>
+            <p className="p-projects">This app takes advantage of the fetch method in order to connect to the Coin Market Cap API, and retrieve 5 live-time meaninfull facts about the 5 most important cryptocurrencies at the moment</p>
+        </div>
         <table>
                        <thead>
                            <tr>
                                <th>Name</th>
                                <th>Price</th>
-                               <th className="thhidden">Market Cap</th>
-                               <th className="thhidden">Circulating Supply</th>
+                               <th>Market Cap</th>
+                               <th>Circulating Supply</th>
                            </tr>
                        </thead>
                        <tbody id="tbody">
@@ -52,9 +58,15 @@ if(!isSmallScreen){
                            
                        </tbody>
                    </table>
+                   </React.Fragment>
     )}
     else{
         return(
+            <React.Fragment>
+                <div>
+            <h1 classname="header-projects">Crypto-Dashboard</h1>
+            <p className="p-projects">This app takes advantage of the fetch method in order to connect to the Coin Market Cap API, and retrieve 5 live-time meaninfull facts about the 5 most important cryptocurrencies at the moment</p>
+        </div>
             <table>
                        <thead>
                            <tr>
@@ -78,6 +90,7 @@ if(!isSmallScreen){
                            
                        </tbody>
                    </table>
+                   </React.Fragment>
         )
     }
 }

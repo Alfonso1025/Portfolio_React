@@ -12,6 +12,8 @@ const urlLex= `http://localhost:3000/tweets/427089628`;
 
 
 const Projects = () => {
+
+
   //Elon Musk
   const [showTweetElon, setShowTweetElon]= useState(false)
   const getTweettElon= useFetch(urlElon, {isloading:true, data:null});
@@ -62,8 +64,8 @@ console.log(tweettElon);
     
 
 <div className="seccion projects" id="projects">
-                    <h1>Projects</h1>
-                    <p>Take a look at some of the software that I have developed. Instructions, description and source code in github are avaiable below.</p>
+                    <h1 className="header-projects">Projects</h1>
+                    <p className="p-projects">Take a look at some of the software that I have developed. Instructions, description and source code in github are avaiable below.</p>
                  
                     <div className="card-project">
                      
@@ -94,8 +96,8 @@ console.log(tweettElon);
                             
                     <div className="inspirations">
 
-                    <h2>Inspirations</h2>
-                      <p>This project retrieves data from the Twitter API and dsiplays the latest twitt from 4 people that I find inspirational</p>
+                    <h2 className="header-projects">Inspirations</h2>
+                      <p className="p-projects">This project retrieves data from the Twitter API and dsiplays the latest twitt from 4 people that I find inspirational</p>
                     
                     <section className="container">
                         <div className="card">
@@ -104,7 +106,7 @@ console.log(tweettElon);
                           <h3>Sam Harrris</h3>
 
                              <button className="inspirations-button" onClick={handleShowTweetSam}>Sam last Tweet</button>  
-                              {showTweetSam?<p>{tweetSam}</p>:<p>{SamDescription}</p> }
+                              {showTweetSam?<p className="inspirations-p">{tweetSam}</p>:<p className="inspirations-p">{SamDescription}</p> }
                             
                             <i className="card-icon"><FaTwitter/></i>
                         </div>
@@ -115,7 +117,7 @@ console.log(tweettElon);
                           <div className="card-elements">
                           <h3>Lex Friedman</h3>
                           <button className="inspirations-button" onClick={handleShowTweettLex}>Lex´s last tweet</button>
-                          {showTweettLex? <p>{tweettLex}</p>: <p>{LexDescription}</p> }
+                          {showTweettLex? <p className="inspirations-p">{tweettLex}</p>: <p className="inspirations-p">{LexDescription}</p> }
                           <i className="card-icon"><FaTwitter/></i>
                         </div>
                         </div>
@@ -125,7 +127,7 @@ console.log(tweettElon);
                           <div className="card-elements">
                           <h3>Vitaly Dmitriyevich</h3>
                          <button className="inspirations-button" onClick={handleShowTweetVitalik}>Vitaly´s last tweet</button>
-                          {showTweetVitalik? <p>{tweetVitalik}</p>: <p>{vitalikDescription}</p> }
+                          {showTweetVitalik? <p className="inspirations-p">{tweetVitalik}</p>: <p className="inspirations-p">{vitalikDescription}</p> }
                           <i className="card-icon"><FaTwitter/></i>
                           </div>
                         </div>
@@ -135,7 +137,7 @@ console.log(tweettElon);
                             <div className="card-elements">
                             <h3>Elon Musk</h3>
                             <button className="inspirations-button" onClick={handleShowTweet}>Elon last Tweet</button>
-                            {showTweetElon ? <p>{tweettElon}</p>: <p>{elonDescription} </p> }
+                            {showTweetElon ? <p className="inspirations-p">{tweettElon}</p>: <p className="inspirations-p">{elonDescription} </p> }
                             
                             
 

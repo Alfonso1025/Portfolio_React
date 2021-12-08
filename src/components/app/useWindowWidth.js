@@ -1,8 +1,24 @@
 import { useState, useEffect } from "react"
 
 const useWindowWidth= ()=>{
-    const[smallScreen, setSmallScreen]= useState(false);
-    const checkScreenSize=()=>setSmallScreen(window.innerWidth<700);
+
+    const[windowSize, setWindowSize]=useState(window.innerWidth)
+
+    useEffect(()=>{
+        const handleResize= ()=>setWindowSize(window.innerWidth)
+        window.addEventListener('resize', handleResize)
+        return window.removeEventListener('resize',handleResize)
+    })
+
+    return windowSize
+
+    /* const[smallScreen, setSmallScreen]= useState(false);
+
+    const checkScreenSize=()=>{
+        setSmallScreen(window.innerWidth<700);
+        console.log(smallScreen)
+        console.log(window.innerWidth)
+    }
 
     useEffect(()=>{
         checkScreenSize();
@@ -10,7 +26,7 @@ const useWindowWidth= ()=>{
         return ()=>window.removeEventListener('resize',checkScreenSize);
     },[])
 
-    return smallScreen;
+    return smallScreen; */
 }
 
 export default useWindowWidth;

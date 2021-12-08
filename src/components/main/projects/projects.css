@@ -1,12 +1,21 @@
 .projects{
         
-    height: 2700px;
-    background-color: #f5fafa;
+    height: 2450px;
+    background-color: #e2eeee;
+    padding-left: 35px;
 
 }
 
 
-
+.header-projects{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.p-projects{
+    text-align: center;
+    margin-bottom: 25px;
+}
 .card-project{
     box-shadow: 0 0 20px rgba(0, 0,0,0.2);
     width: 80%;
@@ -152,6 +161,7 @@
 
  .inspirations .container .card-elements .inspirations-p{
     margin-bottom: 15px;
+    margin-top: 15px;
     text-align: center;
     font-size: 15px;
 
@@ -183,6 +193,10 @@
     background-color: #f5fafa;
     height: 600px;
 
+}
+.crypto-header{
+    height: 200px;
+    margin-bottom: 45px;
 }
 
 table{

@@ -20,6 +20,7 @@ function App() {
     console.log(showSidebar)
   };
 
+
   useEffect(()=>{
     const checkClickOutside= e =>{
       if(showSidebar && ref.current && !ref.current.contains(e.target)){
@@ -30,12 +31,12 @@ function App() {
       return ()=> document.removeEventListener('click',checkClickOutside)
   },[showSidebar]);
 
-  const smallScreen= useWindowWidth()
+  const screenSize= useWindowWidth()
 
 
 
 
-  if(!smallScreen){
+  if(screenSize>700){
   return (
 
 
@@ -48,7 +49,13 @@ function App() {
      
 <div className="col2">
 
-<header  className="header"></header>
+<header  className="header">
+<div class="header-content">
+
+<h1>Welcome to my Portfolio.</h1>
+<p>I am a web developer based in Chicago, Illinois in the United States.</p>
+</div>
+</header>
  <Projects/>
  <About/>
  <Contact/>
