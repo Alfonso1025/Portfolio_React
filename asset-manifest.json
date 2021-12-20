@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Portfolio_React/static/css/main.230c9d01.chunk.css",
+    "main.js": "/Portfolio_React/static/js/main.276d50af.chunk.js",
+    "main.js.map": "/Portfolio_React/static/js/main.276d50af.chunk.js.map",
+    "runtime-main.js": "/Portfolio_React/static/js/runtime-main.3b72ba6a.js",
+    "runtime-main.js.map": "/Portfolio_React/static/js/runtime-main.3b72ba6a.js.map",
+    "static/js/2.cb52aeff.chunk.js": "/Portfolio_React/static/js/2.cb52aeff.chunk.js",
+    "static/js/2.cb52aeff.chunk.js.map": "/Portfolio_React/static/js/2.cb52aeff.chunk.js.map",
+    "static/js/3.145e679d.chunk.js": "/Portfolio_React/static/js/3.145e679d.chunk.js",
+    "static/js/3.145e679d.chunk.js.map": "/Portfolio_React/static/js/3.145e679d.chunk.js.map",
+    "index.html": "/Portfolio_React/index.html",
+    "static/css/main.230c9d01.chunk.css.map": "/Portfolio_React/static/css/main.230c9d01.chunk.css.map",
+    "static/js/2.cb52aeff.chunk.js.LICENSE.txt": "/Portfolio_React/static/js/2.cb52aeff.chunk.js.LICENSE.txt",
+    "static/media/projects.css": "/Portfolio_React/static/media/samharris.e64a0e9d.png",
+    "static/media/app.css": "/Portfolio_React/static/media/autumn.86142695.jpg",
+    "static/media/profile_portfolio.78252856.jpg": "/Portfolio_React/static/media/profile_portfolio.78252856.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3b72ba6a.js",
+    "static/js/2.cb52aeff.chunk.js",
+    "static/css/main.230c9d01.chunk.css",
+    "static/js/main.276d50af.chunk.js"
+  ]
+}
