@@ -26,7 +26,7 @@ const fetchedData= useFetch(fetchParams, {isLoading:true, data:null})
 const arrayData= fetchedData.data.data;
 
 
-if(screenSize>700){ 
+if(screenSize>900){ 
     return(
         <React.Fragment>
         <div className="crypto-header">
@@ -60,11 +60,12 @@ if(screenSize>700){
                    </table>
                    </React.Fragment>
     )}
+    
     else{
         return(
             <React.Fragment>
-                <div>
-            <h1 classname="header-projects">Crypto-Dashboard</h1>
+                <div className="crypto-header">
+            <h1 className="header-projects">Crypto-Dashboard</h1>
             <p className="p-projects">This app takes advantage of the fetch method in order to connect to the Coin Market Cap API, and retrieve 5 live-time meaninfull facts about the 5 most important cryptocurrencies at the moment</p>
         </div>
             <table>

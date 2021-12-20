@@ -31,15 +31,26 @@ body{
   flex-direction: column;
  
 }
+.header{
+  width: auto;
+}
 .header-content{
   padding-top: 100px;
-  display: block;
-  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 3vw;
   color: rgb(165, 145, 145);
   text-align: center;
 }
+.header-content h1{
+  flex:0 1 30%
+}
+.header-content p{
+  flex:0 1 25%
+}
 
-@media (max-width: 700px){
+@media (max-width: 800px){
   .wrapper{
   display: grid;
   grid-template-columns:  80vw;
@@ -47,7 +58,8 @@ body{
   height: 100vh;
   }
   .header{
-    width: 100vw;
+    width: auto;
   }
+
 }
 

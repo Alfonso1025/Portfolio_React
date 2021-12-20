@@ -7,6 +7,11 @@ const About = () => {
     const spanColor="eafafa"
     return ( 
         <div className="seccion about" id="about">
+            <div className="about-header">
+                <h1>About me</h1>
+                <p>My main pursue is writng clean code and using best practices. I am a full stack developer. However, I am pasrticularly interested on the back-end </p>
+                <p>The following are some technoliogies with which I have hands on experience</p>
+            </div>
             <div className="about-container">
                 <div className="css stack"><DiCss3 size="50px" color={stackColor} /><span>CSS</span></div>
             

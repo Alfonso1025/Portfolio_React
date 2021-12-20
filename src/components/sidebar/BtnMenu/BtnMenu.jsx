@@ -4,13 +4,14 @@ const BtnMenu = (props) => {
 
 
     return ( 
-<button
+    <button className="hamburger" onClick={props.click}>
+        
+            <div className="bar"></div>
+        
+        
+        
     
-    onClick={props.click}
-   
-    >
-        Menu
-      </button>
+    </button>
      );
 }
  

@@ -36,7 +36,7 @@ function App() {
 
 
 
-  if(screenSize>700){
+  if(screenSize>900){
   return (
 
 
@@ -50,12 +50,15 @@ function App() {
 <div className="col2">
 
 <header  className="header">
-<div class="header-content">
+  <div class="header-content">
 
-<h1>Welcome to my Portfolio.</h1>
-<p>I am a web developer based in Chicago, Illinois in the United States.</p>
-</div>
+    <h1>Welcome to my Portfolio.</h1>
+    <p>I am a web developer </p>
+    <p> based in Chicago, Illinois in the United States.</p>
+  
+  </div>
 </header>
+ 
  <Projects/>
  <About/>
  <Contact/>
@@ -71,14 +74,28 @@ function App() {
     return(
       <>
 
-      <div>
-        <BtnMenu  click={clickButtonSidebar}/>
-        </div>
+        
 
       <div ref={ref}>
       {showSidebar && <SidebarSmall/>}
       </div>
-      <header className="header"></header>
+
+        <header className="header">
+
+        <div>
+        <BtnMenu  click={clickButtonSidebar}/>
+        </div>
+
+        <div class="header-content">
+
+          <h1>Welcome to my Portfolio.</h1>
+          <p>I am a web developer </p>
+          <p> based in Chicago, Illinois in the United States.</p>
+        </div>
+          
+      </header>
+
+      
       <Projects/>
       <About/>
 

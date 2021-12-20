@@ -20,19 +20,27 @@ const Contact = () => {
 
     return ( 
         <footer className="contact" id="contact">
+          
+            <div className="contact-header">
+                <h1>Contact me</h1>
+                <p>If you are hiring or would like to work with me in a project or just have suggestion on how to make this website and the projects showed above better, please leave a message.  </p>
+                
+            </div>
             
             <form  onSubmit={sendEmail} action="">
+                <div className="grid-form">
                     <input id="firstname" className="fisrtname" type="text" placeholder="FIRSTNAME"/>
                     <input id="lastname" className="lastname" type="text" placeholder="LASTNAME"/>
                     <input id="email"className="email" type="email" placeholder="EMAIL"/>
                     <input id="company"className="company" type="text" placeholder="COMPANY"/>
                     <textarea id="message" className="message" placeholder="MESSAGE" ></textarea>
-                    <div className="align-button">
-                    <button className="button"  id="contact-button">
+                </div>  
+                   <div className="align-button">
+                     <button className="button"  id="contact-button">
                     SEND MESSAGE
-                  </button>
+                    </button>
                   
-                  </div>
+                    </div>
                     
                   </form>
                   
