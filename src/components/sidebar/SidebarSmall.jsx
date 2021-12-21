@@ -5,7 +5,7 @@ import profilePic from "./profile/profile_portfolio.jpg"
 const SidebarSmall= ()=>{
 
     return(
-<aside className="sidebar">
+<aside className="sidebar sidebar-small">
 <div className="container-profile-pic">
 
                 <div className="profile-pic-col">
@@ -17,7 +17,7 @@ const SidebarSmall= ()=>{
                 </div>
         </div>
 
-        <ul> <FaEnvelope />
+        <ul> 
             <li><a href="#projects" className="scroll"> <FaBriefcase />Projects</a></li>
             <li><a href="#about" className="scroll"><FaUserAlt />About</a></li>
             <li><a href="#blog" className="scroll"> <FaBlog /> Blog</a></li>

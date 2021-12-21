@@ -15,6 +15,20 @@
 
 }
 
+.hamburger-right{
+    position: relative;
+    left: 80%;
+    display: block;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    padding-left: 7px;
+    appearance: none;
+    background: rgba(128, 136, 144, 0.5);
+    outline:none;
+    border:none;
+}
+
 .hamburger .bar, .hamburger:after, .hamburger:before{
     content:'';
     display: block;
@@ -25,9 +39,5 @@
     margin:6px 0px;
     transition:0.4s;
 
-
-
-
-
-
 }
+

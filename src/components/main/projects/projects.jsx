@@ -16,7 +16,7 @@ return (
                     <div className="card-project">
                      
                       <div className="project-sidebar">
-                        <div className="project-image"><FaTools size="50px" background="#8ebebc"/></div>
+                        
                         <ul className="project-stack">
                           <li>Python</li>
                           <li>Django</li>
@@ -28,7 +28,10 @@ return (
                       </div>
 
                       <div className="project-main">
-                        <h2 className="project-name">Handy</h2>
+                        <div className="project-main-header">
+                          <h2 className="project-name">Handy</h2>
+                          <span className="project-image"><FaTools size="50px" background="#8ebebc"/></span>
+                          </div>
                         <h4>Web app</h4>
                         <p className="project-body">On its most basic and current state, Handy is an app that allows you to create a profile and upload a "Project", pictures or video of something that needs fixing at home like a broken door handle with a description. Contractors can see the Projects and select them. After a contractor has selected your Project yiu will be notified on your profile.Handy, was built using Bootstrap and JS for the front-end as well as Django and PostgreSQL for the server side.</p>
                         <div className="project-button">

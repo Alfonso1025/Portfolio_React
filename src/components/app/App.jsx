@@ -17,6 +17,8 @@ function App() {
 
   const clickButtonSidebar= ()=>{
     setShowSidebar(!showSidebar)
+    
+
     console.log(showSidebar)
   };
 
@@ -24,7 +26,7 @@ function App() {
   useEffect(()=>{
     const checkClickOutside= e =>{
       if(showSidebar && ref.current && !ref.current.contains(e.target)){
-        setShowSidebar(false)
+        setShowSidebar(!showSidebar)
       }
       }
       document.addEventListener('click', checkClickOutside);
@@ -83,7 +85,7 @@ function App() {
         <header className="header">
 
         <div>
-        <BtnMenu  click={clickButtonSidebar}/>
+        <BtnMenu showSidebar={showSidebar} click={clickButtonSidebar}/>
         </div>
 
         <div class="header-content">
@@ -98,6 +100,7 @@ function App() {
       
       <Projects/>
       <About/>
+      <Contact/>
 
      
       
