@@ -96,8 +96,6 @@ function App() {
         </div>
           
       </header>
-
-      
       <Projects/>
       <About/>
       <Contact/>

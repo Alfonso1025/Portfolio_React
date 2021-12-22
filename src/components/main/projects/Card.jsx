@@ -10,7 +10,7 @@ const name=props.name
 const description=props.description
 
 // concatenate url with id
-const url=`http://localhost:3000/tweets/${id}`
+const url=`https://aqueous-bayou-70326.herokuapp.com/tweets/${id}`
 
 //fetch tweet by user id
 const getTweet=useFetch(url,{isloading:true, data:null})
