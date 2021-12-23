@@ -3,14 +3,9 @@ import React from 'react'
 import useFetch from '../../app/useFetch';
 import useWindowWidth from '../../app/useWindowWidth';
 
+const url='http://localhost:3000/crypto'
 
-const key = "ceac3276-b187-4407-86f7-b10e62b7f3d0";
-
-const url= "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",
-
-        qString="?CMC_PRO_API_KEY=" + key + "&start=1&limit=5&convert=USD ";
-
-const fetchParams =url+qString
+const fetchParams =url
 
 
 
