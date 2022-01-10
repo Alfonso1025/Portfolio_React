@@ -3,7 +3,7 @@ import React from 'react'
 import useFetch from '../../app/useFetch';
 import useWindowWidth from '../../app/useWindowWidth';
 
-const url='http://localhost:3000/crypto'
+const url='https://aqueous-bayou-70326.herokuapp.com/crypto'
 
 const fetchParams =url
 
